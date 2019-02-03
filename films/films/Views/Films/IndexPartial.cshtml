@@ -1,0 +1,20 @@
+﻿@using System.Activities.Statements
+@using System.Drawing
+@model DAL.Entities.Film
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.NameFilm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Producer)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id= Model.Id }) |
+            @Html.ActionLink("Details", "Details", new { id= Model.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id= Model.Id })
+        </td>
+    </tr>
